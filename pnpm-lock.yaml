@@ -78,8 +78,8 @@ devDependencies:
     specifier: ^2.1.0
     version: 2.1.0
   tree-sitter-ocaml:
-    specifier: ^0.21.2
-    version: 0.21.2
+    specifier: ^0.20.4
+    version: 0.20.4
   tree-sitter-php:
     specifier: ^0.22.0
     version: 0.22.2
@@ -1190,8 +1190,8 @@ packages:
       nan: 2.18.0
     dev: true
 
-  /tree-sitter-ocaml@0.21.2:
-    resolution: {integrity: sha512-OoO7Bis2v/iANZEaQJmITvwr5zlWFgF2wHJSqGfpzngfJwgcnu7luCeyhL8WdCPV5WNYyYTEgpRvfPNRvixRGQ==}
+  /tree-sitter-ocaml@0.20.4:
+    resolution: {integrity: sha512-k8w2yQwSY1j8LZQmfrSgs8/P6+Nair67JHhysW5Sgfr4SGIq4tqkQnHnZAG0vVo1vsHslGvYRiaYsUSros8p+Q==}
     requiresBuild: true
     dependencies:
       nan: 2.19.0

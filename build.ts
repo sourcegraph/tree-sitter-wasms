@@ -59,7 +59,7 @@ PromisePool.withConcurrency(os.cpus().length)
 		if (name === "tree-sitter-rescript") {
 			await buildParserWASM(name, { generate: true });
 		} else if (name === "tree-sitter-ocaml") {
-			await buildParserWASM(name, { subPath: "grammars/ocaml" });
+			await buildParserWASM(name, { subPath: "ocaml" });
 		} else if (name === "tree-sitter-php") {
 			await buildParserWASM(name, { subPath: "php" });
 		} else if (name === "tree-sitter-typescript") {
