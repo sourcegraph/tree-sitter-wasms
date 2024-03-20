@@ -113,9 +113,6 @@ devDependencies:
   tree-sitter-typescript:
     specifier: ^0.20.5
     version: 0.20.5
-  tree-sitter-yaml:
-    specifier: ^0.5.0
-    version: 0.5.0
   ts-node:
     specifier: ^10.9.2
     version: 10.9.2(@types/node@20.11.30)(typescript@5.4.2)
@@ -1280,13 +1277,6 @@ packages:
     dependencies:
       nan: 2.18.0
       tree-sitter: 0.20.6
-    dev: true
-
-  /tree-sitter-yaml@0.5.0:
-    resolution: {integrity: sha512-POJ4ZNXXSWIG/W4Rjuyg36MkUD4d769YRUGKRqN+sVaj/VCo6Dh6Pkssn1Rtewd5kybx+jT1BWMyWN0CijXnMA==}
-    requiresBuild: true
-    dependencies:
-      nan: 2.18.0
     dev: true
 
   /tree-sitter@0.20.6:
