@@ -5,8 +5,13 @@
 	"repository": "https://github.com/sourcegraph/tree-sitter-wasms",
 	"author": "Gregor <gregorwbr@gmail.com>, Menci <huanghaorui301@gmail.com>",
 	"license": "Unlicense",
+	"private": false,
 	"scripts": {
 		"build": "ts-node build.ts"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
 	},
 	"devDependencies": {
 		"@supercharge/promise-pool": "^3.1.1",
