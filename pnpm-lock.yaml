@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^1.1.4
     version: 1.1.4
   '@types/node':
-    specifier: ^20.11.17
-    version: 20.11.24
+    specifier: ^20.11.30
+    version: 20.11.30
   '@willjouo/tree-sitter-r':
     specifier: ^0.0.1
     version: 0.0.1
@@ -38,6 +38,9 @@ devDependencies:
   tree-sitter-css:
     specifier: ^0.20.0
     version: 0.20.0
+  tree-sitter-dart:
+    specifier: ^1.0.0
+    version: 1.0.0
   tree-sitter-elisp:
     specifier: ^1.3.0
     version: 1.3.0
@@ -54,20 +57,20 @@ devDependencies:
     specifier: ^0.20.0
     version: 0.20.0
   tree-sitter-html:
-    specifier: ^0.20.0
-    version: 0.20.1
+    specifier: ^0.20.2
+    version: 0.20.2
   tree-sitter-java:
     specifier: ^0.20.2
     version: 0.20.2
   tree-sitter-javascript:
-    specifier: ^0.20.3
-    version: 0.20.3
+    specifier: ^0.20.4
+    version: 0.20.4
   tree-sitter-json:
     specifier: ^0.20.2
     version: 0.20.2
   tree-sitter-kotlin:
-    specifier: ^0.3.1
-    version: 0.3.1
+    specifier: ^0.3.5
+    version: 0.3.5(tree-sitter@0.21.0)
   tree-sitter-lua:
     specifier: ^2.1.3
     version: 2.1.3
@@ -99,8 +102,8 @@ devDependencies:
     specifier: ^0.19.0
     version: 0.19.0
   tree-sitter-swift:
-    specifier: ^0.4.0
-    version: 0.4.0
+    specifier: ^0.4.3
+    version: 0.4.3
   tree-sitter-systemrdl:
     specifier: ^0.7.0
     version: 0.7.0
@@ -118,7 +121,7 @@ devDependencies:
     version: 0.5.0
   ts-node:
     specifier: ^10.9.2
-    version: 10.9.2(@types/node@20.11.24)(typescript@5.3.3)
+    version: 10.9.2(@types/node@20.11.30)(typescript@5.3.3)
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -212,8 +215,8 @@ packages:
     resolution: {integrity: sha512-2EXK/+gVhVgtt4JqThbEncORvpYJKzi9tQGmI3EkU2jTgMzQsrPm/hbd5xe5uPdeFzIW5gh2PRvvPjaUsI8vpg==}
     dev: true
 
-  /@types/node@20.11.24:
-    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
+  /@types/node@20.11.30:
+    resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -825,6 +828,16 @@ packages:
       semver: 7.6.0
     dev: true
 
+  /node-addon-api@7.1.0:
+    resolution: {integrity: sha512-mNcltoe1R8o7STTegSOHdnJNN7s5EUvhoS7ShnTHDyOSd+8H+UdWODq6qSv67PjC8Zc5JRT8+oLAMCr0SIXw7g==}
+    engines: {node: ^16 || ^18 || >= 20}
+    dev: true
+
+  /node-gyp-build@4.8.0:
+    resolution: {integrity: sha512-u6fs2AEUljNho3EYTJNBfImO5QTo/J/1Etd+NVdCj7qWKUSN/bSLkZwhDv7I+w/MSC6qJ4cknepkAYykDdK8og==}
+    hasBin: true
+    dev: true
+
   /node-gyp@10.0.1:
     resolution: {integrity: sha512-gg3/bHehQfZivQVfqIyy8wTdSymF9yTyP4CJifK73imyNMU8AIGQE2pUa7dNWfmMeG9cDVF2eehiRMv0LC1iAg==}
     engines: {node: ^16.14.0 || >=18.0.0}
@@ -1249,6 +1262,13 @@ packages:
       nan: 2.18.0
     dev: true
 
+  /tree-sitter-dart@1.0.0:
+    resolution: {integrity: sha512-Ve5YMPJjjGW9LEsO+MngAOibQsw5obFp+bUT41pvwdcXWRwJImOWs3eaPi6AubEiBmc09qvhdvxeIXvxlhMnug==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
+    dev: true
+
   /tree-sitter-elisp@1.3.0:
     resolution: {integrity: sha512-6j8RmhyvmUbAev3/rqRyBf1MTmAbKWA/ggdWRXxC04DD+r+gvrJ8o7xDpiBurvdXTbsuL21SZ2VvBm7Usp334w==}
     requiresBuild: true
@@ -1285,8 +1305,8 @@ packages:
       nan: 2.18.0
     dev: true
 
-  /tree-sitter-html@0.20.1:
-    resolution: {integrity: sha512-75+QD9psUPuCAT2tYoUv2TuGESeLE78R4MDRLL59qthKVPuNa8JLsXJqc62pQae1XFjZr6O/f+2DzBrTczYdWA==}
+  /tree-sitter-html@0.20.2:
+    resolution: {integrity: sha512-2bzbZE69yYXzq3gnqT09x48y/6HaWX8d2YL5po5UO+LEKFRXSGiOvalZ4S6lBse6DZbfcJrEffJdF+txFwO+LA==}
     requiresBuild: true
     dependencies:
       nan: 2.18.0
@@ -1299,8 +1319,8 @@ packages:
       nan: 2.18.0
     dev: true
 
-  /tree-sitter-javascript@0.20.3:
-    resolution: {integrity: sha512-sNUIb/Vh+RRS10Ia5Bm/7V0PI7tZLC4C/v3jFqV+iUv577hZ5moYznbtMrxbvQsdT9AzpchHgi+/WYL7StJHnA==}
+  /tree-sitter-javascript@0.20.4:
+    resolution: {integrity: sha512-7IUgGkZQROI7MmX2ErKhE3YP4+rM2qwBy5JeukE7fJQMEYP9nHpxvuQpa+eOX+hE1im2pWVc1yDCfVKKCBtxww==}
     requiresBuild: true
     dependencies:
       nan: 2.18.0
@@ -1313,11 +1333,19 @@ packages:
       nan: 2.18.0
     dev: true
 
-  /tree-sitter-kotlin@0.3.1:
-    resolution: {integrity: sha512-mSm1H7FBwJ3D8gtYdQ6ptSY6spIo7UvHWx8zdmrWthn+g8lcMKJ9LD3N4xVnbBmisdVtU/8g0oFpkuAWFsxAMA==}
+  /tree-sitter-kotlin@0.3.5(tree-sitter@0.21.0):
+    resolution: {integrity: sha512-VafPUcGSgzIDgwTNRTG6AIiln9PIW0TisLlKXuk0AmkKNzgXcj8CQRgm01OyyhnGrtqDw4DsLgCNHKdXu0kgjA==}
     requiresBuild: true
+    peerDependencies:
+      tree-sitter: ^0.21.0
+      tree_sitter: '*'
+    peerDependenciesMeta:
+      tree_sitter:
+        optional: true
     dependencies:
-      nan: 2.18.0
+      node-addon-api: 7.1.0
+      node-gyp-build: 4.8.0
+      tree-sitter: 0.21.0
     dev: true
 
   /tree-sitter-lua@2.1.3:
@@ -1387,8 +1415,8 @@ packages:
       nan: 2.18.0
     dev: true
 
-  /tree-sitter-swift@0.4.0:
-    resolution: {integrity: sha512-Wbul0z6fLSnl+uPhgK+yVK5IbdvugrVnIaRyS2xQ7zaFdExRw1WRvxrXyvurNVqk1VT1AGNFK7A/h1HPwSnIXQ==}
+  /tree-sitter-swift@0.4.3:
+    resolution: {integrity: sha512-UYwtnhaZo0/VIykY/vJlaH5sj+EqLsHkeVSHUNMC+4McdtVpVyNqq96HB4Djvg9QyirwiwErFn9EXc2oyEo8Qw==}
     requiresBuild: true
     dependencies:
       nan: 2.18.0
@@ -1440,7 +1468,15 @@ packages:
       prebuild-install: 7.1.2
     dev: true
 
-  /ts-node@10.9.2(@types/node@20.11.24)(typescript@5.3.3):
+  /tree-sitter@0.21.0:
+    resolution: {integrity: sha512-WDhpLxQdW7wsmmnBsf4NGqnEKs+Kxljk/CfbJJxgzZiinfA1gAWnhi/GirQjClw+woXhYsNq930BlskFulMMBQ==}
+    requiresBuild: true
+    dependencies:
+      node-addon-api: 7.1.0
+      node-gyp-build: 4.8.0
+    dev: true
+
+  /ts-node@10.9.2(@types/node@20.11.30)(typescript@5.3.3):
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
@@ -1459,7 +1495,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.11.24
+      '@types/node': 20.11.30
       acorn: 8.11.3
       acorn-walk: 8.3.1
       arg: 4.1.3
