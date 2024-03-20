@@ -113,9 +113,6 @@ devDependencies:
   tree-sitter-typescript:
     specifier: ^0.20.5
     version: 0.20.5
-  tree-sitter-vue:
-    specifier: ^0.2.1
-    version: 0.2.1
   tree-sitter-yaml:
     specifier: ^0.5.0
     version: 0.5.0
@@ -1283,13 +1280,6 @@ packages:
     dependencies:
       nan: 2.18.0
       tree-sitter: 0.20.6
-    dev: true
-
-  /tree-sitter-vue@0.2.1:
-    resolution: {integrity: sha512-Uy6/ih87qJfoID5Z45Mb3qBqMuFfhnN5u6Ujgrmi/D6SyFIoZSZTAV97yxsejXFdcn4Vw3/XO+agk7ztIdhJLw==}
-    requiresBuild: true
-    dependencies:
-      nan: 2.18.0
     dev: true
 
   /tree-sitter-yaml@0.5.0:

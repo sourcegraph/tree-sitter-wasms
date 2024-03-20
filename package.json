@@ -50,7 +50,6 @@
 		"tree-sitter-systemrdl": "^0.7.0",
 		"tree-sitter-toml": "^0.5.1",
 		"tree-sitter-typescript": "^0.20.5",
-		"tree-sitter-vue": "^0.2.1",
 		"tree-sitter-yaml": "^0.5.0",
 		"ts-node": "^10.9.2",
 		"typescript": "5.4.2"
