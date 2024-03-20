@@ -51,6 +51,8 @@ const grammars = Object.keys(packageInfo.devDependencies).filter(
 	(n) => n.startsWith("tree-sitter-") && n !== "tree-sitter-cli",
 );
 
+grammars.push("@elm-tooling/tree-sitter-elm");
+
 PromisePool.withConcurrency(os.cpus().length)
 	.for(grammars)
 	.process(async (name) => {
